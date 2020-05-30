@@ -1,0 +1,294 @@
+body{
+    margin: 0px; 
+    padding: 0px;
+    font-family: Roboto, arial;    
+    overflow:hidden;    
+    transform-origin: 0 0;
+}
+iframe{
+    padding: 0px;
+    border: 0px;
+}
+.anim{
+    
+    /*-webkit-transition: all 2600ms ease-in-out ;*/
+    transition: all 2400ms ease-in-out ;
+    backface-visibility:visible;
+    
+}
+
+.epic-wrapper{
+    
+    transform-origin: 0px 0px 0px;
+}
+
+.sk-main-wrapper{
+    background: url('../img/bg.png')repeat-x 50% 50%;
+    overflow:hidden;
+}
+.sk-stage-wrapper{    
+    height:100%;
+    position:relative;
+    left:0px;
+    -webkit-transform:translateX(0px);
+    transform:translateX(0px);
+    
+    
+}
+
+.paralex-el{
+    width:100%;
+    height:100%;
+    position:absolute;    
+    left:-150px;
+    background-repeat:repeat-x !important;
+    background-position: bottom !important;
+    /*-webkit-transform:translateX(0px) translateY(120%) scale(1);*/
+    transform:translateX(0px) translateY(120%) scale(1);
+    transform-origin:100% 100%;
+    -webkit-transition-property: transform;    
+    transition-property: transform;    
+}
+
+.hp-mainwrapper-el{
+    position:absolute;
+    z-index:8;
+}
+
+.slidr-paralxSliderPage-el{
+    
+    position:absolute;
+    z-index:8;
+    
+    
+    
+}
+
+
+
+.hp-el{
+    position:absolute;
+    /*-webkit-transform:translateX(0px) translateY(150%) scale(0.5);*/
+    transform:translateX(0px) translateY(150%) scale(0);
+}
+
+.paralex-el[idx="1"]{
+    top:-210px;
+}
+
+.sun{
+    background-repeat:no-repeat !important;
+    background-position: top left !important;
+    width:1114px !important;
+    height:1001px !important;
+    z-index:0 !important;
+    top:-30% !important;
+    left:3% !important;
+    
+}
+
+
+.sk-arw-itm{
+    width:40px;
+    height:140px;
+    background:rgba(0, 0, 0, 0.75);
+    position:absolute;    
+    margin:auto;
+    top: 0px;
+    bottom: 0px;
+    cursor:pointer;    
+}
+
+.left{    
+    left: 0px;    
+}
+
+.right{    
+    right: 0px;    
+}
+
+.hp-getstarted-btn{    
+    background: linear-gradient(to bottom,  #fde365 0%, #e2bb16 100%); 
+    z-index: 10;
+    text-align:center;
+    text-transform:uppercase;   
+    font-size: 1.6em;        
+    border-radius: 10px 10px 0px 0px;
+    border:3px solid #a30713;    
+    color:#a30713;    
+    background-position: bottom !important;    
+    transform:translateX(0px) translateY(120%) scale(1);        
+    width:300px;
+    height:65px;
+    line-height:65px;
+    cursor:pointer;
+    font-weight:bold;
+    box-shadow: 0px 0px 0px 5px #bf9b43;
+    transition-delay:300ms;
+    transition-duration: 600ms;
+    position: absolute;
+    left:0px;
+    right:0px;
+    bottom: -3px;    
+    margin:auto;
+}
+
+
+.sk-ovrly-bg-slider{
+    width:1300px;
+    height:900px;
+    background:rgba(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 5;
+    border-radius:20px;
+}
+
+.sk-ovrly-title-txt{
+    width:100%;
+    height:180px;
+    line-height:180px;
+    text-align:center;
+    font-size:60px;
+	font-family: Times New Roman;
+    color:#f7bc2e;
+    text-transform:uppercase;
+}
+
+.sk-spec-title {
+    font-size: 70px;
+    font-family: Times New Roman;
+    color: #f7bc2e;
+    margin: 5% 0px 2% 0px;
+    margin-left: 73px;
+}
+
+.sk-ovrly-sliderCont {        
+    overflow: hidden;
+    margin: auto;
+    padding: 0px 12%;
+}
+
+.sk-ovrlysldr-spanel{
+    width:340px;
+    height:526px;    
+    float:left;  
+    position:relative;
+    cursor:pointer;
+}
+.sk-ovrly-grnyParent{
+    overflow: hidden;
+    padding-left:10px;
+}
+.sk-ovrlysldr-grParent-el{
+    transition-duration: 800ms;
+}
+.skimgc_arw_left, .skimgc_arw_right{
+    width:50px;
+    height:90px;
+    background: url('../img/icn_slidr_arrw.png')repeat-x 50% 50%;
+    position:absolute;
+    z-index:5;
+    margin-top: 15%;
+    cursor:pointer;
+}
+
+.skimgc_arw_left {
+    left: 47px;
+}
+
+.skimgc_arw_right{
+    transform:rotate(180deg);
+    right: 47px;
+    opacity:1;
+}
+
+.skimgc_arw_disable{
+    opacity:0.2;
+}
+.sk-photo-el{
+    margin: 10px auto;
+    border: 1px solid #F0BF30;
+    box-shadow: 0px 0px 0px 0px #F0BF2F;
+    transition-duration: 300ms;
+}
+.sk-ovrlysldr-spanel .sk-photo-el:hover{    
+    box-shadow: 0px 0px 15px 0px #F0BF2F;    
+}
+.sk-photo-titl{
+    width:320px;
+    height:70px;
+    line-height:70px;    
+    position: absolute;
+    bottom: 0px;
+    text-align:center;
+    font-size:36px;
+    text-transform:capitalize;
+    color:#bd0315;   
+    font-family: Times New Roman;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black, 2px 2px 0px black;
+    
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9bd4d+0,c2850f+100 */
+    background: #e9bd4d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e9bd4d 0%, #c2850f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #e9bd4d 0%,#c2850f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #e9bd4d 0%,#c2850f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9bd4d', endColorstr='#c2850f',GradientType=0 ); /* IE6-9 */
+
+    
+}
+.sk-spec-overly-cont{
+    margin-left:73px;
+    width: 83%;
+    height: 75%;
+}
+
+.sk-spec-wrapper{
+    width:100%;
+    height:100%;        
+    position: relative;
+}
+
+.sk-spec-wrapper img{
+    
+    height:100%;
+    
+    
+}
+
+.sk-spec-overlay {
+    width: 42%;
+    height: 84%;
+    background: rgba(0,0,0,0.90);
+    border-radius: 40px;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+.starter{
+    -webkit-transform: translateX(0px) translateY(0%) scale(1);        
+    transform: translateX(0px) translateY(0%) scale(1);        
+    opacity:1;
+}
+
+.flowergirl {
+    transform: translateX(-150%) translateY(20%) scale(1);
+     opacity:0.5;
+}
+
+.flowergirl.starter{
+    -webkit-transform: translateX(0px) translateY(0%) scale(1);        
+    transform: translateX(0px) translateY(0%) scale(1);        
+    opacity:1;
+}
+
+p.sk-spec-desc {
+    color: #F7BC2E;
+    width: 100%;
+    padding:0;
+    margin:0;
+    margin-top:20px;
+    height: 260px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
